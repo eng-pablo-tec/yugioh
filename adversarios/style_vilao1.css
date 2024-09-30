@@ -1,0 +1,19 @@
+/* Animação para cartas saindo da mão */
+@keyframes sairMao {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100px); opacity: 0; }
+}
+
+.carta_saida_mao {
+    animation: sairMao 1s forwards;
+}
+
+/* Animação para cartas movendo-se para o campo */
+@keyframes moverCampo {
+    0% { transform: translateY(-100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.carta_mover_campo {
+    animation: moverCampo 1s forwards;
+}

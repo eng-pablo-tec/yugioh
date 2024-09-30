@@ -1,0 +1,410 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tela{
+    height:100vh;
+    width:99.9vw;
+    display:flex;
+    background-color: rgb(0, 0, 255);
+}
+
+.meta-campo{
+    height: 100%;
+    width: 80%;
+    display:flex;
+    background-color: white;
+}
+
+.campo{
+    height:68.5%;
+    width:70%;
+    background-color: green;
+}
+
+.linha{
+    height:25%;
+    width:100%;
+    display:flex;
+}
+
+.mao, .mao_adv{
+    display:flex;
+    height: 20%;
+    width: 100%;
+    background: rgb(255, 0, 0);
+    Border: 2px solid black;  
+    gap: 20px;
+    justify-content: center;
+}
+
+.carta_mao_adv{
+    height: 100%;
+    width: 20%;
+    background: rgb(0, 0, 0);
+    Border: 2px solid black;  
+}
+
+.carta_mao{
+    height: 100%;
+    width: 20%;
+    background: rgb(0, 0, 0);
+    Border: 2px solid black;
+}
+
+.quadro{
+    height: 100%;
+    width: 20%;
+    background-image:url(img/campo1.png);
+    background-size: cover;
+    background-position: center;
+    Border: 2px solid black;
+}
+
+.muro{
+    height: 1%;
+    width: 100%;
+    background-color: blue;
+}
+
+.batalha{
+    background-color: rgb(19, 150, 150);
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+}
+
+.batalhante{
+    height: 47.8vh;
+    background: orange;
+    Border: 5px solid black;
+}
+
+.batalhante>img{
+    background: orange;
+}
+
+.detalhes{
+    display:flex;
+    background-color: rgb(19, 150, 150);
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+}
+
+.informacoes{
+    height: 50%;
+    width: 100%;
+    background: orange;
+    Border: 5px solid black;
+}
+
+.campo_direita, .campo_esquerda{
+    height: 100%;
+    width: 20%;
+    background: rgb(131, 252, 83);
+}
+
+.campo_direita_botoes{
+    height: 70%;
+    background: white;
+
+}
+
+.pontos{
+    background: red;
+    border-radius: 50px;
+    text-align: center;
+    color:white;
+}
+
+.baralho{
+    display:flex;
+    height: 30%;
+    width: 100%;
+    background-image:url(img/baralho5.jpg);
+    background-position: center;
+    background-size: contain;
+    Background-repeat: no-repeat;
+}
+
+.carta img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.carta{
+    width: 10%;
+    height: 10%;
+}
+
+.botao-efeito {
+    background-color: #00ff0d; /* Cor de fundo verde */
+    color: rgb(13, 109, 9); /* Cor do texto */
+    font-weight: bold;
+    padding: 5px 10px; /* Espaçamento interno */
+}
+
+#boneco_player{
+    height: 30%;
+    width: 100%;
+}
+
+#id_campo_jogador_1 img,
+#id_campo_jogador_2 img,
+#id_campo_jogador_3 img,
+#id_campo_jogador_4 img,
+#id_campo_jogador_5 img,
+#id_magico_jogador_1 img,
+#id_magico_jogador_2 img,
+#id_magico_jogador_3 img,
+#id_magico_jogador_4 img,
+#id_magico_jogador_5 img,
+#id_campo_adv_1 img,
+#id_campo_adv_2 img,
+#id_campo_adv_3 img,
+#id_campo_adv_4 img,
+#id_campo_adv_5 img,
+#id_magico_adv_1 img,
+#id_magico_adv_2 img,
+#id_magico_adv_3 img,
+#id_magico_adv_4 img,
+#id_magico_adv_5 img {
+    width: 80%;
+    height: 100%;
+}
+
+#id_campo_jogador_1,
+#id_campo_jogador_2,
+#id_campo_jogador_3,
+#id_campo_jogador_4,
+#id_campo_jogador_5,
+#id_magico_jogador_1,
+#id_magico_jogador_2,
+#id_magico_jogador_3,
+#id_magico_jogador_4,
+#id_magico_jogador_5,
+#id_campo_adv_1,
+#id_campo_adv_2,
+#id_campo_adv_3,
+#id_campo_adv_4,
+#id_campo_adv_5,
+#id_magico_adv_1,
+#id_magico_adv_2,
+#id_magico_adv_3,
+#id_magico_adv_4,
+#id_magico_adv_5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    position: relative; /* Garantir que os elementos filhos com position: absolute sejam posicionados em relação a esse container */
+}
+
+.ativar-efeito-btn {
+    position: absolute; /* Garantir que o botão se posicione corretamente em relação ao container */
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 90px; /* Ajuste conforme necessário */
+    white-space: nowrap;
+    z-index: 10; /* Garantir que o botão apareça acima de outros elementos */
+ }
+ 
+ .carta_clonada img {
+    width: 100%; /* A imagem ocupará 80% da largura da carta */
+    height: auto; /* Mantém a proporção correta da imagem */
+}
+
+ #id_esquerda_carta{
+    width:100%;
+    height: 82.5vh;
+    border:1px solid;
+ }
+
+.esquerda_info{
+    font-size: 80%;
+    width:100%;
+    height: 10vh;
+    border:1px solid;
+}
+
+.botao_carta{
+    background: red;
+    width:48.822%;
+    border-radius: 5%;
+    padding: 2.3% 0%;
+    color:white;
+}
+
+/* Adicione isso ao seu CSS */
+.girar_90 {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease; /* Opcional: adiciona uma transição suave */
+}
+
+.girar_0 {
+    transform: rotate(00deg);
+    transition: transform 0.5s ease; /* Opcional: adiciona uma transição suave */
+}
+
+.branco{
+    width: 100%;
+    height: 63%;
+    background-image:url(img/campo1.png);
+    background-size: cover;
+    background-position: center;
+    filter: saturate(3);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.5px; /* Menor espaçamento entre as letras */
+}
+
+.carta_clonada_batalha {
+    height: 50%; /* Limita a altura da carta */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Faz a imagem da carta ajustar ao tamanho máximo da div pai */
+.carta_clonada_batalha img {
+    width: 100%;
+    align-items: center;
+}
+
+#id_branco_jogador{
+    font-size: 60%;
+}
+
+.botao_luta{
+    background: rgb(38, 0, 255);
+    width:100%;
+    border-radius: 5%;
+    padding: 2.3% 0%;
+    color:white;
+}
+
+@keyframes moverParaMao {
+    0% {
+        transform: translate(0, 0) scale(3);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-30vw, 20vh) scale(5); /* Ajuste de acordo com sua interface */
+        opacity: 1;
+    }
+}
+
+.carta.animar {
+    animation: moverParaMao 1s forwards;
+}
+
+/* Sobreposição para o turno do adversário */
+.turno_oponente, .class_cemiterio{
+    position: fixed;
+    top: 47vh;
+    left: 0;
+    width: 100%;
+    height: 53vh;
+    background-color: rgba(128, 128, 128, 0.6); /* Cinza com opacidade */
+    z-index: 1; /* Garante que fique acima de outros elementos */
+    display: none; /* Oculta por padrão */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inicio_duelo{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 1); /* Cinza com opacidade */
+    z-index: 1; /* Garante que fique acima de outros elementos */
+    display: none; /* Oculta por padrão */
+    color: white;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.botao_inicio{
+    background: red;
+    width:10%;
+    height:10%;
+    border-radius: 5%;
+    padding: 2.3% 0%;
+    color:white;
+}
+
+#id_finalizar_turno{
+    background: rgb(100,100,100);
+}
+
+.carta_adv img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.carta_adv{
+    width: 100%;
+    height: 100%;
+}
+
+.botao_carta:disabled {
+    background-color: gray; /* Cor de fundo cinza */
+    color: white; /* Cor do texto branca */
+    cursor: not-allowed; /* Muda o cursor para indicar que o botão não está disponível */
+}
+
+.fases{
+    display: flex;
+    flex-direction: column;
+}
+
+#id_branco_adv img{
+width: 10vw;
+}
+
+#botao_cemiterio_adv, #botao_cemiterio_jog{
+    background-color: rgb(4, 71, 4);
+}
+
+#botao_cemiterio_sair{
+    background-color: rgb(90, 179, 90);
+}
+
+.carta-cemiterio img{
+    width: 30%;
+}
+
+.carta-cemiterio{
+        font-size: 50%; /* Define o tamanho da fonte para 10px */    
+}
+
+#campo_cemiterio_jog, #campo_cemiterio_adv{
+    display:flex;
+    top: 60%;
+    height:40%;
+    width:100%;
+    }
+
+#titulo_cemiterio_jog, #titulo_cemiterio_adv{
+    display:flex;
+    height:20%;
+    }
+
+
+    #botao_fullscreen{
+        background-color: black;
+    }

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugioh!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adversarios/style_vilao1.css">
+</head>
+<body>
+<div class="tela">
+
+    <!-- Adiciona a sobreposição para o turno do adversário -->
+<div id="turno_adversario" class="turno_oponente">Turno do Oponente</div>
+
+<div id="tela_cemiterio_adv" class="class_cemiterio">
+    <div id="titulo_cemiterio_adv" class="class_cemiterio">Cemitério Adversario</div>
+    <div id="campo_cemiterio_adv" class="class_cemiterio"></div>
+</div>
+
+<div id="tela_cemiterio_jog" class="class_cemiterio">
+    <div id="titulo_cemiterio_jog" class="class_cemiterio">Cemitério Jogador</div>
+    <div id="campo_cemiterio_jog" class="class_cemiterio"></div>
+</div>
+
+<div id="inicio" class="inicio_duelo">Comece o Duelo
+    <button id="id_botao_inicio" class="botao_inicio">Inicio</button>
+</div>
+    <div class="campo_esquerda">
+        <div id="id_esquerda_carta" class="esquerda_info"></div>
+        <div id="id_esquerda_acoes" class="esquerda_botoes">
+                <button id="id_botao_ataque" class="botao_carta">Ataque</button>
+                <button id="id_botao_defesa" class="botao_carta">Defesa</button>
+                <button id="botao_fullscreen" class="botao_carta">Tela Cheia</button>
+                <button id="id_botao_efeito" class="botao_carta">Efeito</button>
+                <button id="id_botao_atk" class="botao_carta">Escolha seu Monstro!</button>
+                <button id="id_botao_atk_adv" class="botao_carta">Escolha seu oponente</button>
+                <div id="id_turno" class="turno">Turno??</div>
+        </div>
+    </div>
+    <div class="meta-campo">
+        <div class="detalhes">
+            <div class="informacoes"></div>
+            <div class="informacoes"></div>
+        </div>
+        <div class="campo">
+            <div id="id_mao_adv" class="mao_adv"></div>
+            <div id="id_campo_mag_adv" class="linha">
+                <div id="id_magico_adv_1" class="quadro"></div>
+                <div id="id_magico_adv_2" class="quadro"></div>
+                <div id="id_magico_adv_3" class="quadro"></div>
+                <div id="id_magico_adv_4" class="quadro"></div>
+                <div id="id_magico_adv_5" class="quadro"></div>
+            </div>
+            <div id="id_campo_monstro_adv" class="linha">
+                <div id="id_campo_adv_1" class="quadro"></div>
+                <div id="id_campo_adv_2" class="quadro"></div>
+                <div id="id_campo_adv_3" class="quadro"></div>
+                <div id="id_campo_adv_4" class="quadro"></div>
+                <div id="id_campo_adv_5" class="quadro"></div>
+            </div>
+            <div class="muro"></div>
+            <div id="id_campo_monstro_personagem" class="linha">
+                <div id="id_campo_jogador_1" class="quadro"></div>
+                <div id="id_campo_jogador_2" class="quadro"></div>
+                <div id="id_campo_jogador_3" class="quadro"></div>
+                <div id="id_campo_jogador_4" class="quadro"></div>
+                <div id="id_campo_jogador_5" class="quadro"></div>
+            </div>
+            <div id="id_campo_mag_personagem" class="linha">
+                <div id="id_magico_jogador_1" class="quadro"></div>
+                <div id="id_magico_jogador_2" class="quadro"></div>
+                <div id="id_magico_jogador_3" class="quadro"></div>
+                <div id="id_magico_jogador_4" class="quadro"></div>
+                <div id="id_magico_jogador_5" class="quadro"></div>
+            </div>
+            <div id="id_mao" class="mao">
+
+            </div>
+        </div>
+        <div class="batalha">
+            <div id="batalha_adv" class="batalhante">
+                <div id="id_pontos_adversario" class="pontos">config</div>
+                <img id="boneco_player" src="img/marik.jpg">
+                <div id="id_branco_adv" class="branco"></div>
+            </div>
+            
+            <button id="id_luta" class="botao_luta">BATALHA!</button>
+
+            <div id="batalha_jogador" class="batalhante">
+                <div id="id_branco_jogador" class="branco"></div>
+                <img id="boneco_player" src="img/jogador_foto.jpg">
+                <div id="id_pontos_jogador" class="pontos">config</div>
+            </div>
+        </div>
+    </div>
+    <div class="campo_direita">
+        <div class="campo_direita_botoes">
+            <button id="id_finalizar_turno" class="botao_carta">Finalizar Turno</button>
+            <button id="id_teste000" class="botao_carta">Teste000</button>
+            <button id="id_teste111" class="botao_carta">Teste111</button>
+            <button id="id_teste222" class="botao_carta">Saque ia</button>
+            <button id="id_teste333" class="botao_carta">invocar mag</button>
+            <button id="id_invocar_monstro" class="botao_carta">invocar monstro</button>
+            <button id="id_efeito_ia" class="botao_carta">efeito ia</button>
+            <button id="id_batalha_ia" class="botao_carta">batalha ia</button>
+            <button id="teste_1" class="botao_carta">Teste 1</button>
+            <button id="botao_cemiterio_adv" class="botao_carta">Cemiterio Adversario</button>
+            <button id="botao_cemiterio_jog" class="botao_carta">Cemiterio Jogador</button>
+            <button id="botao_cemiterio_sair" class="botao_carta">Botão sair do Cemitério</button>
+            
+            <div class="fases">
+            <button id="fase_1_saque" class="botao_carta">Saque</button>
+            <button id="fase_2_batalha" class="botao_carta">Batalha</button>
+            <button id="fase_3_fim" class="botao_carta">Fim de Turno</button></div>
+        </div>
+        <div id="id_baralho" class="baralho"></div>
+    </div>       
+    </div>
+
+    <script src="0-baralho.js"></script>
+    <script src="efeitos/jogador/efeitos_jogador.js"></script>
+
+    <script src="1-codigo.js"></script>
+    <script src="2-info.js"></script>
+    <script src="3-cuncar.js"></script>
+    
+    <script src="ia_e_adv/teste1.js"></script>
+
+    <script src="4-invocar.js"></script>
+
+    <script src="5-efeito.js"></script>
+    <script src="6-atk_def.js"></script>
+
+    <script src="adversarios/baralho1_vilao1.js"></script>
+
+    <script src="ia_e_adv/010-info_adv.js"></script>
+    
+    <script src="ia_e_adv/08_ia_saque.js"></script>
+    <script src="ia_e_adv/09_inv_mag.js"></script>
+    <script src="ia_e_adv/10-inv-monstro.js"></script>
+
+    <script src="ia_e_adv/11-efeito_ia.js"></script>
+    <script src="ia_e_adv/12-batalha_ia.js"></script>
+
+    <script src="ia_e_adv/8-ia.js"></script>
+
+    <script src="ia_e_adv/9-info_adv.js"></script>
+    
+    <script src="7-fases.js"></script>
+    <script src="ia_e_adv/11-turno_reiniciado.js"></script>
+
+    <script src="meta_efeito.js"></script>
+    
+    <script src="botao_cemiterio.js"></script>
+    <script src="12-batalha_jogador.js"></script>
+    <script src="13-batalha_adv.js"></script>
+    <script src="14-luta.js"></script>
+
+    <!--testes-->
+    <script src="000teste.js"></script>
+    <script src="111teste.js"></script>
+    
+
+</body>
+</html>
